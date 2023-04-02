@@ -3,7 +3,7 @@ package valid_parantheses
 type ValidParentheses struct {
 }
 type IValidParantheses interface {
-	IsValid()
+	IsValid(parantheses string) bool
 }
 
 func (v *ValidParentheses) IsValid(parantheses string) bool {
@@ -29,6 +29,6 @@ func (v *ValidParentheses) IsValid(parantheses string) bool {
 	return len(stack) == 0
 }
 
-func NewValidParentheses() ValidParentheses {
-	return ValidParentheses{}
+func NewValidParentheses() IValidParantheses {
+	return &ValidParentheses{}
 }
