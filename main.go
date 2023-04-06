@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	binary_search "leetcode/binary-search"
+	rotate_string "leetcode/rotate-string"
 	valid_parantheses "leetcode/vaild-parantheses"
 )
 
@@ -15,4 +16,7 @@ func main() {
 	search := binary_search.NewBinarySearch()
 	fmt.Println(search.FindIndex([]int{1, 2, 3, 5, 7, 9, 12}, 3))
 
+	//RotateString
+	rotateString := rotate_string.NewRotateString()
+	fmt.Println(rotateString.RotateString("abcde", "cdeab"))
 }
