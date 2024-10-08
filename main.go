@@ -4,6 +4,7 @@ import (
 	"fmt"
 	binary_search "leetcode/binary-search"
 	hash_set "leetcode/hash-set"
+	minimumstringlengthafterremovingsubstrings "leetcode/minimum-string-length-after-removing-substrings"
 	number_of_closed_islands "leetcode/number-of-closed-islands"
 	rotate_string "leetcode/rotate-string"
 	valid_parantheses "leetcode/vaild-parantheses"
@@ -41,4 +42,8 @@ func main() {
 		{1, 0, 0, 0, 0, 0, 1},
 		{1, 1, 1, 1, 1, 1, 1},
 	}))
+
+	minStr:=minimumstringlengthafterremovingsubstrings.MinLength("ABFCACDB")
+	fmt.Println(minStr)
+
 }
